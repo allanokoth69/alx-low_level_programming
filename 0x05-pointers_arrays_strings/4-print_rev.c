@@ -1,24 +1,23 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * print_array - prints an aray a number of times.
- * @a: an array.
- * @n: the number of elements to print.
- *
- */
-void print_array(int *a, int n)
+  * print_rev - prints string
+  * @s: input string
+  * Return: no return
+**/
+void print_rev(char *s)
 {
-	int i;
+	int counter = 0;
 
-	for (i = 0 ; i < n ; i++)
+	while (*s != '\0')
 	{
-		printf("%d", *(a + i));
-		if (i < n - 1)
-		{
-			printf(", ");
-		}
+		s++;
+		counter++;
 	}
-	printf("\n");
+	while (counter > 0)
+	{
+		s--;
+		_putchar(*s);
+		counter--;
+	}
+	_putchar('\n');
 }
-

@@ -1,8 +1,8 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
  * main - check the code
- * print_rev-prints rev
+ *
  * Return: Always 0.
  */
 int main(void)
